@@ -23,8 +23,7 @@ ul{
     border: 0px;
     padding: 5px 10px;
     border-radius: 10px;
-    font-weight: bolder;
-    
+    font-weight: bolder; 
 }
 
 .Button:hover{
@@ -39,12 +38,11 @@ ul{
 .mainButton:hover{
     box-shadow: 1px 1px green;
 }
-
 .secondaryButton {
    background-color: #66d8f5;
    color: white;
 }
-
 .secondaryButton:hover{
     box-shadow: 1px 1px rgb(7, 135, 167);  
 }
+
