@@ -15,6 +15,39 @@ ul{
 
 }
 
+
+.logo{
+    height: 50px;    
+}
+
+.button{
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bolder; 
+}
+
+.Button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+} 
+
+.mainButton{
+    background-color: #1bb76e;
+    color: white;
+}
+.mainButton:hover{
+    box-shadow: 1px 1px green;
+}
+.secondaryButton {
+   background-color: #66d8f5;
+   color: white;
+}
+.secondaryButton:hover{
+    box-shadow: 1px 1px rgb(7, 135, 167);  
+}
+
+
 .buscar{
   background-color: white;
   border: 1px solid gray;
@@ -30,3 +63,4 @@ ul{
     outline: none;
     border: 0px;
 }
+
