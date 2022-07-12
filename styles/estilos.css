@@ -12,7 +12,14 @@ ul{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    background-color: gainsboro;
+    border-bottom: 1px solid gray;
+    box-shadow: 1px 1px gray;
+}
 
+.navbar > li {
+    display: flex;
+    align-items: center;
 }
 
 .logo{
@@ -26,7 +33,7 @@ ul{
     font-weight: bolder; 
 }
 
-.Button:hover{
+.button:hover{
     cursor: pointer;
     transform: scale(1.1);
 } 
@@ -56,6 +63,9 @@ ul{
   border: 1px solid gray;
   padding: 4px;
   border-radius: 8px;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
 }
 
 .buscar:focus-within{
@@ -65,4 +75,8 @@ ul{
 .buscar > input {
     outline: none;
     border: 0px;
+}
+
+.iconoBusqueda:hover{
+    color: blue;
 }
