@@ -77,6 +77,27 @@ ul{
     border: 0px;
 }
 
+
+.breedCardContainer {
+    display: flex;
+}
+
+.breedCard{
+    margin: 10px;
+}
+
+.contenedor-imagen{
+    width: 240px;
+    height: 350px;
+    display: flex;
+}
+
+.contenedor-imagen > img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
 .iconoBusqueda:hover{
     color: blue;
 }
