@@ -1,7 +1,11 @@
 import './styles/Styles.css';
 import bordercollie from './media/bordercollie.jpg'
 import rhodesian from './media/rhodesian.jpg'
+import bulldogsIngles from './media/bulldogsIngles.jpg'
+import husky from './media/husky.jpg'
+import rottweiler from './media/rottweiler.jpg'
 import logo from './media/dog-head-logo.png'
+
 
 
 
@@ -36,20 +40,13 @@ function App() {
     </header>
     <main>
         <section>
-            <h1>Razas Perros</h1>
+            <h1 className='tittle'>Razas Perros</h1>
             <ul className="breedCardContainer">
-                <li className="breedCard">
-                    <div className="contenedor-imagen">
-                        <img src={bordercollie} alt="border Collie" />
-                    </div>
-                    <span className="breedTitle">Border Collie</span> 
-                </li>
-                <li className="breedCard">
-                    <div className="contenedor-imagen">
-                        <img src={rhodesian} alt="rhodesian" />
-                    </div>
-                    <span className="breedTitle">Rodhesian</span>
-                </li>
+                <CardRazasPerros nombreRaza= 'Rhodesian' imagen = { rhodesian } />
+                <CardRazasPerros nombreRaza= 'BorderCollie' imagen = { bordercollie } />
+                <CardRazasPerros nombreRaza= 'Bull Dog Ingles' imagen = { bulldogsIngles } />
+                <CardRazasPerros nombreRaza= 'husky' imagen = { husky } />
+                <CardRazasPerros nombreRaza= 'rottweiler' imagen = { rottweiler } />
             </ul>
         </section>
         <section></section>
@@ -57,6 +54,18 @@ function App() {
 
     </div>
   );
+}
+
+function CardRazasPerros( { nombreRaza, imagen } ){
+    return (
+        <li className="breedCard">
+            <div className="contenedor-imagen">
+                <img src={ imagen } alt= { nombreRaza } />
+            </div>
+            <span className="breedTitle">{  nombreRaza } </span> 
+        </li>
+        
+    );
 }
 
 export default App;
