@@ -1,6 +1,9 @@
 import './styles/Styles.css';
 import bordercollie from './media/bordercollie.jpg'
 import rhodesian from './media/rhodesian.jpg'
+import logo from './media/dog-head-logo.png'
+
+
 
 function App() {
   return (
@@ -8,7 +11,7 @@ function App() {
       <header>
         <ul className="navbar">
              <li>
-                <img className="logo" src="./media/dog-head-logo.png" alt="imagen logo Perro" />
+                <img className="logo" src= { logo } alt="imagen logo Perro" />
             </li>
             <li>
                 <button className="button mainButton">Nuevo Post</button>
