@@ -1,6 +1,11 @@
+import Header from "componets/Header"
 
 
-export default function Rhodesian (){
-    return <div>Esta es la Pagina del Rhodesian</div>
+
+ function Rhodesian (){
+    return <div>
+        <Header />
+        Esta es la Pagina del Rhodesian</div>
 }
 
+export default Rhodesian;
