@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 
 
-function CardRazasPerros( { nombreRaza, imagen } ){
+function CardRazasPerros( { nombreRaza, imagen, linkpag } ){
     return (
         <li className="breedCard">
-            <Link to='/rhodesian'>
+            <Link to= { linkpag }>
                 <div className="contenedor-imagen">
                     <img src={ imagen } alt= { nombreRaza } />
                 </div>

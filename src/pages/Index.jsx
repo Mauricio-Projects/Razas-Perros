@@ -5,30 +5,28 @@ import rhodesian from 'media/rhodesian.jpg';
 import bulldogsIngles from 'media/bulldogsIngles.jpg';
 import husky from 'media/husky.jpg';
 import rottweiler from 'media/rottweiler.jpg';
-import Header from 'componets/Header';
+
 
 
 
 function Index() {
     return (
-    <div>    
-        <div>
-        <Header/>
-            <main>
+         <div> 
                 <section>
                     <h1 className='tittle'>Razas Perros</h1>
                     <ul className="breedCardContainer">
-                        <CardRazasPerros nombreRaza= 'Rhodesian' imagen = { rhodesian } />
-                        <CardRazasPerros nombreRaza= 'BorderCollie' imagen = { bordercollie } />
-                        <CardRazasPerros nombreRaza= 'Bull Dog Ingles' imagen = { bulldogsIngles } />
-                        <CardRazasPerros nombreRaza= 'husky' imagen = { husky } />
-                        <CardRazasPerros nombreRaza= 'rottweiler' imagen = { rottweiler } />
+                        <CardRazasPerros nombreRaza= 'Rhodesian' imagen = { rhodesian } linkpag='/Rhodesian' />
+                        <CardRazasPerros nombreRaza= 'BorderCollie' imagen = { bordercollie } linkpag='/BorderCollie' />
+                        <CardRazasPerros nombreRaza= 'Bull Dog Ingles' imagen = { bulldogsIngles } linkpag='/bulldogIngles' />
+                        <CardRazasPerros nombreRaza= 'husky' imagen = { husky } linkpag='/husky' />
+                        <CardRazasPerros nombreRaza= 'rottweiler' imagen = { rottweiler } linkpag='/rottweiler' />
                     </ul>
                 </section>
                 <section></section>
-            </main>
+
         </div>
-  </div>
+       
+  
     ) 
 }
 

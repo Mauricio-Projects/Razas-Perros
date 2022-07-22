@@ -1,11 +1,15 @@
 import logo from 'media/dog-head-logo.png';
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
     return (
         <header>
             <ul className="navbar">
                 <li>
+                    <Link to='/'>
                     <img className="logo" src= { logo } alt="imagen logo Perro" />
+                    </Link>
                 </li>
                 <li>
                     <button className="button mainButton">Nuevo Post</button>

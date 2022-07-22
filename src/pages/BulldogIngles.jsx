@@ -1,7 +1,10 @@
 
 
+
 function BulldogIngles (){
-    return <div>Esta es la Pagina del Bulldog Ingles </div>
+    return <div className="mainContainer">
+                <div>Esta es la Pagina del Bulldog Ingles </div>  
+            </div>
 }
 
 export default  BulldogIngles
