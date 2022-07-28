@@ -77,8 +77,33 @@ justify-content: space-between;
   border: 0px;
 }
 
+.tittle {
+  text-align: center;
+  border: 1px dotted #000;
+  padding: 8px;
+  font-size: xx-large;
+ 
+}
+
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mainContainer > main {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.mainContainer > footer {
+  background-color: red;
+  padding: 10px;
+}
+
 .breedCardContainer {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breedCard{

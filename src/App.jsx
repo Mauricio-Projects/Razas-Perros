@@ -1,59 +1,30 @@
-import './styles/Styles.css';
-import bordercollie from './media/bordercollie.jpg'
-import rhodesian from './media/rhodesian.jpg'
+import Index  from "pages/Index";
+import Rhodesian from "pages/Rhodesian";
+import BulldogIngles from "pages/BulldogIngles";
+import LayoutPrincipal from "layouts/LayoutPrincipal";
+
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Rotweiller from "pages/Rotweiller";
+
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <ul className="navbar">
-             <li>
-                <img className="logo" src="./media/dog-head-logo.png" alt="imagen logo Perro" />
-            </li>
-            <li>
-                <button className="button mainButton">Nuevo Post</button>
-            </li>
-            
-            <li>
-
-                <div className="buscar">
-                    <input placeholder="Buscar Una Raza"/>
-                    <i className="fas fa-search button iconoBusqueda" ></i>
-                </div>
-            </li>
-
-            <li>
-                <button className="button secondaryButton">Login</button>
-            </li>
-            <li>
-                <button className="button mainButton">Registro</button>
-            </li>
-
-        </ul>
-    </header>
-    <main>
-        <section>
-            <h1>Razas Perros</h1>
-            <ul className="breedCardContainer">
-                <li className="breedCard">
-                    <div className="contenedor-imagen">
-                        <img src={bordercollie} alt="border Collie" />
-                    </div>
-                    <span className="breedTitle">Border Collie</span> 
-                </li>
-                <li className="breedCard">
-                    <div className="contenedor-imagen">
-                        <img src={rhodesian} alt="rhodesian" />
-                    </div>
-                    <span className="breedTitle">Rodhesian</span>
-                </li>
-            </ul>
-        </section>
-        <section></section>
-    </main>
-
+      <BrowserRouter>
+        <LayoutPrincipal>
+          <Routes>
+            <Route path="/" element={< Index />} />
+            <Route path="/rhodesian" element={< Rhodesian />} />
+            <Route path="/bulldogIngles" element={< BulldogIngles />} />
+            <Route path="/rotweiller" element={< Rotweiller />} />
+          </Routes> 
+        </LayoutPrincipal>              
+      </BrowserRouter>         
     </div>
   );
 }
 
+
 export default App;
+
+
